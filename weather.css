@@ -5,7 +5,7 @@
 
 .overallContainer{
     width: 800px;
-    height: 700px;
+    height: 900px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -95,4 +95,70 @@ input[type = "submit"]:hover{
 .container p span{
     color: #f4780d;
     font-size: 25px;
+}
+
+@media(max-width: 768px){
+    .overallContainer{
+    width: 600px ;
+    height: 700px;
+    }
+
+    .weather{
+        width: 400px;
+        position: relative;
+        left: 17%;
+    }
+
+    .container{
+        background-color: white;
+        height: 45vh;
+        border-radius: 2px;
+    }
+}
+
+
+@media(max-width: 480px){
+    .overallContainer{
+        width: 350px ;
+        height: 700px;
+    }
+
+    .form{
+        width: 270px;
+        height: 230px;
+    }
+
+    input[type = "text"]{
+        width: 85%;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    input[type = "submit"]{
+        width: 40%;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+    .weather{
+            width: 280px;
+            position: relative;
+            left: 11%;
+    }
+        
+    .container{
+            height: 45vh;
+    }
+        
+    .container p{
+            font-size: 18px;
+    }
+        
+    .container h2 span{
+            font-size: 26px;
+    }
+        
+    .container p span{
+            font-size: 15px;
+    }
 }
